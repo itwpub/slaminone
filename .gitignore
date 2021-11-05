@@ -1,6 +1,4 @@
-.git
 .github
 build
 debug
 release
-CMakeLists.txt

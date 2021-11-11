@@ -22,10 +22,10 @@ int main( int argc, char **argv )
       ROS_ERROR("Open Camera error! exit node");
         return -1;
     }
-    cap.set(CV_CAP_PROP_SETTINGS, 1); //opens camera properties dialog
+    cap.set(cv::CAP_PROP_SETTINGS, 1); //opens camera properties dialog
     
-    cap.set( CV_CAP_PROP_FRAME_WIDTH, 320 );
-    cap.set( CV_CAP_PROP_FRAME_HEIGHT, 240 );
+    cap.set(cv::CAP_PROP_FRAME_WIDTH, 320 );
+    cap.set(cv::CAP_PROP_FRAME_HEIGHT, 240 );
     std::cout << "MJPG: " << cap.set( cv::CAP_PROP_FOURCC, cv::VideoWriter::fourcc( 'M', 'J', 'P', 'G' ) ) << std::endl;
     std::cout << "~~~ Read camera OK ~~~" << std::endl;
     cv::Mat frame;
